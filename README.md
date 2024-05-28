@@ -7,7 +7,6 @@ Design patterns can be divided amoung 3 categories:
 - Structural
   
 - Behavioral
-  
 
 With creational patterns, we can create objects to increase our code flexibility and reusability; for structural, we assemble objects and classes to form larger structures, while keeping theses structures flexible and efficient; and last, but not least, for behavioral, we think about algorithms and the assignment of responsibilities amoung objects.
 
@@ -30,9 +29,11 @@ The patterns are:
 - **Singletone**
   
 
-### Factory Method
+### Factory Method (or Virtual Constructor)
 
 Is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+
+
 
 ## References
 
