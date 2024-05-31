@@ -1,5 +1,12 @@
 # Design Patterns
 
+Design patterns help you choose design alternatives that make a system reusable and avoid alternatives that compromise reusability.
+
+> [!NOTE]
+> Program to an interface, not an implementation
+
+Before we dive in, please have in mind that learning these patterns can be slow and confunsing in your first tries. Please be patient, because once you grasp them, it'll be worth it.
+
 Design patterns can be divided amoung 3 categories:
 
 - Creational
@@ -32,8 +39,6 @@ The patterns are:
 ### Factory Method (or Virtual Constructor)
 
 Is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
-
-
 
 ## References
 
