@@ -13,8 +13,12 @@
 // Pattern
 // (We're using an skincare scenario for the examples)
 
-// Variaty 1: when the Creator class is an abstract class and i
-// does not provide an implementation for the factory method it declares
+/*
+ * Creator: declares the factory method, which returns an object of type Product
+ */
+
+// Variaty 1: when the Creator class is an abstract class and it
+// does not provide an implementation for the factory method
 abstract class Creator {
   abstract createProduct(): SkincareProduct
 }
@@ -39,18 +43,30 @@ class Creator3 {
   }
 }
 
+/*
+ * Concrete Creator: overrides the factory method of the Creator
+ */
+
 // Concrete Creator
 class LipOilCreator extends Creator {
-  createProduct(): SkincareProduct {
+  override createProduct(): SkincareProduct {
     return new LipOil();  
   }
 }
 
-// Our code will only deals with this interface, thus 
-// it'll work with any concrete product defined class
+/*
+ * Product: defines the interface of objects created by the factory
+ *
+ * Our code will only deal with this interface, thus 
+ * it'll work with any concrete product defined class
+ */
 interface SkincareProduct {
   operation(): string;
 }
+
+/*
+ * Concrete Product: responsible for the interface implementation
+ */
 
 // Concrete Product #1
 class LipOil implements SkincareProduct {
